@@ -201,6 +201,49 @@ public class Program
                         }
                     }
                 }
+                else if (option == 3)
+                {
+                    const string MSG_NO_LUCK = "Today is not your lucky day, you found 0 bits 🪙.";
+                    const string MSG_LUCKY = "Today is your lucky day, you found";
+                    const string MSG_GOLD_GPU = "You unlocked the gold GPU ⚜️! Your spells now run at 120 FPS!";
+                    const string MSG_INTEGRATED_GPU = "Your magic card is still integrated 🪵. Return to the mine to try your luck!";
+
+                    int totalBits = 0;
+                    var randomLoot = new Random();
+
+                    Console.WriteLine("\n--- WELCOME TO THE MAGIC BITCOIN MINE 💰 ---");
+
+                    for (int excavation = 1; excavation <= 5; excavation++)
+                    {
+                        int chance = randomLoot.Next(1, 101);
+
+                        Console.Write($"Excavation {excavation}/5 -> ");
+
+                        if (chance <= 20)
+                        {
+                            Console.WriteLine(MSG_NO_LUCK);
+                        }
+                        else
+                        {
+                            int bitsFound = randomLoot.Next(5, 51);
+                            totalBits += bitsFound;
+                            Console.WriteLine($"{MSG_LUCKY} {bitsFound} bits 🪙.");
+                        }
+                    }
+
+                    Console.WriteLine("\n---------------------------------------------------------");
+                    Console.WriteLine($"Total bits collected: {totalBits} 🪙");
+
+                    if (totalBits > 200)
+                    {
+                        Console.WriteLine(MSG_GOLD_GPU);
+                    }
+                    else
+                    {
+                        Console.WriteLine(MSG_INTEGRATED_GPU);
+                    }
+                    Console.WriteLine("---------------------------------------------------------");
+                }
             }
             catch (FormatException)              // Text que no és un número: "abc", "3.5", ""
             {

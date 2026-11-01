@@ -25,3 +25,16 @@ Has estat admès a l’Acadèmia d’Arcanistes! Entrena durant 5 dies, meditant
 
 ### 🐉 Capítol 2: El calabós del Drac RAMón el Poderós
 Enfronta't al temible drac RAMón. Per aconseguir el seu tresor, has de desbloquejar 3 portes màgiques endevinant els codis d'accés (de
+
+### 💰 Capítol 3: Saquejar el botí
+A sota del cau del drac s'amaga una mina plena de bitcoins màgics! Tens 5 intents d'excavació, però vés amb compte, hi ha un 20% de probabilitats de no trobar res. Reuneix més de 200 bits per desbloquejar el premi definitiu: **La GPU d'or ⚜️ (els teus encanteris aniran a 120 FPS!)**.
+
+## ⚙️ Requisits
+- Visual Studio Community / JetBrains Rider / VS Code
+- .NET SDK instal·lat.
+- Un terminal que suporti **codificació UTF-8** (perquè els emojis es visualitzin correctament).
+
+## 🚀 Com jugar
+1. Clona aquest repositori:
+   ```bash
+   git clone [https://github.com/el-teu-usuari/CodeQuest-Template.git](https://github.com/el-teu-usuari/CodeQuest-Template.git)
